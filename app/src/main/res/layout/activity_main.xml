@@ -6,25 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/app_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:background="@drawable/app_topbar_background"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/toolbar_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:fontFamily="@font/kanit_semibold"
-            android:text="เลือกระดับความยากคำศัพท์"
-            android:textColor="@android:color/white"
-            android:textSize="24dp"
-            android:layout_marginTop="130dp"
-            android:textStyle="bold" />
-    </androidx.appcompat.widget.Toolbar>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -44,6 +26,6 @@
         android:layout_height="0dp"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/app_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/voc_navigation" />
 </androidx.constraintlayout.widget.ConstraintLayout>
