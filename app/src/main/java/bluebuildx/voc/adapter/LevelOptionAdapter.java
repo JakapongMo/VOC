@@ -53,9 +53,10 @@ public class LevelOptionAdapter extends PagerAdapter {
         level = view.findViewById(R.id.level_text);
         description = view.findViewById(R.id.description_text);
 
-        Picasso.get().load(models.get(position).getImageUrl()).placeholder(R.mipmap.ic_launcher)
+        Picasso.get()
+                .load(models.get(position).getImageUrl())
+                .placeholder(R.mipmap.ic_launcher)
                 .into(imageView);
-        Picasso.get().setLoggingEnabled(true);
         level.setText(models.get(position).getLevel());
         description.setText(models.get(position).getDescription());
 
